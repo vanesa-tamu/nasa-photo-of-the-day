@@ -1,9 +1,8 @@
 import React from "react";
-import Description from './Description.js'
-
+// import Description from './Description.js'
 import {
     Card, CardImg, CardText, CardBody,
-    CardTitle, CardSubtitle, Button
+    CardTitle, CardSubtitle, Container, Row
   } from 'reactstrap';
 
 function Cards(props){
@@ -16,7 +15,7 @@ function Cards(props){
         //     {/* <p>{props.nasa.explanation}</p> */}
         //     <Description info={props.nasa.explanation}/>
         // </>
-        <>
+        <Container>
         <Card>
             <CardImg top-width='100%' src={props.nasa.url} alt='photo of the day'/>
             <CardBody>
@@ -25,7 +24,7 @@ function Cards(props){
                 <CardText>{props.nasa.explanation}</CardText>
             </CardBody>
         </Card>
-        </>
+        </Container>
 
 
     )
