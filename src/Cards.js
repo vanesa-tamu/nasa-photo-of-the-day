@@ -4,6 +4,8 @@ import {
     Card, CardImg, CardText, CardBody,
     CardTitle, CardSubtitle, Container, Row
   } from 'reactstrap';
+import './Cards.css'
+
 
 function Cards(props){
     console.log('card props', props.nasa)
@@ -15,11 +17,11 @@ function Cards(props){
         //     {/* <p>{props.nasa.explanation}</p> */}
         //     <Description info={props.nasa.explanation}/>
         // </>
-        <Container>
+        <Container className='general-card'>
         <Card>
             <CardImg top-width='100%' src={props.nasa.url} alt='photo of the day'/>
             <CardBody>
-                <CardTitle>{props.nasa.title}</CardTitle>
+                {/* <CardTitle>{props.nasa.title}</CardTitle> */}
                 <CardSubtitle>{props.nasa.date}</CardSubtitle>
                 <CardText>{props.nasa.explanation}</CardText>
             </CardBody>
