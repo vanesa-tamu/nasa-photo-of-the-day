@@ -5,13 +5,15 @@ const Hi = styled.div`
     background: cornflowerblue;
     width: auto;
     border-block-color: red;
-    height: 200px;
+    height: 100px;
     display: flex;
-    padding: 5rem;
     margin-left: 10rem;
     margin-right: 10rem;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
     font-size: 5rem;
+    box-shadow: 10px 5px 5px grey;
 `;
 
 function Welcome(props){
