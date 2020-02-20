@@ -2,7 +2,7 @@ import React, {useEffect, useState} from "react";
 import "./App.css";
 import axios from 'axios'
 
-import Card from './Card.js'
+import Cards from './Card.js'
 
 function App() {
   const [nasa, setNasa] = useState([])
@@ -17,7 +17,7 @@ function App() {
   }, [])
   return (
     <div className="App">
-      <Card nasa={nasa}/>
+      <Cards nasa={nasa}/>
     </div>
   );
 }
