@@ -1,5 +1,6 @@
 import React from "react";
 // import Description from './Description.js'
+import Welcome from './Welcome.js'
 import {
     Card, CardImg, CardText, CardBody,
     CardTitle, CardSubtitle, Container, Row
@@ -19,6 +20,7 @@ function Cards(props){
         // </>
         <Container className='general-card'>
         <Card>
+            <Welcome nasa={props.nasa}/>
             <CardImg top-width='100%' src={props.nasa.url} alt='photo of the day'/>
             <CardBody>
                 {/* <CardTitle>{props.nasa.title}</CardTitle> */}

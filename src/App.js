@@ -1,7 +1,7 @@
 import React, {useEffect, useState} from "react";
 import "./App.css";
 import axios from 'axios'
-import Welcome from './Welcome.js'
+// import Welcome from './Welcome.js'
 import Cards from './Cards.js'
 
 function App() {
@@ -17,7 +17,6 @@ function App() {
   }, [])
   return (
     <div className="App">
-      <Welcome nasa={nasa}/>
       <Cards nasa={nasa}/>
     </div>
   );
